@@ -150,16 +150,16 @@ Chạy script và điền kết quả vào bảng:
 
 | Metric | Kết quả |
 |---|---|
-| Thời gian load data | |
-| Thời gian training | |
-| Best iteration | |
-| AUC-ROC | |
-| Accuracy | |
-| F1-Score | |
-| Precision | |
-| Recall | |
-| Inference latency (1 row) | |
-| Inference throughput (1000 rows) | |
+| Thời gian load data | 1.9560 s |
+| Thời gian training | 1.3262 s |
+| Best iteration | 1 |
+| AUC-ROC | 0.951654 |
+| Accuracy | 0.998947 (99.89%) |
+| F1-Score | 0.727273 |
+| Precision | 0.655738 |
+| Recall | 0.816327 (81.63%) |
+| Inference latency (1 row) | 0.8508 ms |
+| Inference throughput (1000 rows) | 991,799.37 samples/s |
 
 ---
 
