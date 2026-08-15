@@ -54,8 +54,20 @@ Theo số liệu ghi nhận từ các công cụ giám sát trên VM (`top`, `fr
 
 ---
 
-## 5. Danh mục Minh chứng (Evidence Files)
-- `evidence/1_Benchmark.py.png`: Ảnh chụp màn hình kết quả chạy script `python3 benchmark.py`.
-- `evidence/3_Resource.png`: Ảnh chụp màn hình giám sát tài nguyên CPU (`top`), RAM (`free -h`), Network (`ip -s link`).
-- `evidence/benchmark_result.json`: File JSON chứa toàn bộ số liệu đo lường.
-- `benchmark.py`: Mã nguồn script benchmark hoàn chỉnh.
+## 5. Đánh giá Chi phí Thực tế (Cost & Billing Reports)
+Theo ghi nhận thực tế trên Google Cloud Billing Reports (sau khi hoàn thành và dọn dẹp hạ tầng):
+- **Compute Engine (`e2-medium`):** `đ711` (~$0.028)
+- **Networking (Cloud NAT / Egress):** `đ600` (~$0.024)
+- **Tổng chi phí thực tế:** `đ1,311` (hoàn toàn nằm trong gói Free Trial / Credit miễn phí).
+- **Đánh giá:** Chi phí thực tế khớp với dự toán ban đầu (~$0.09/giờ), việc sử dụng kiến trúc CPU Node với LightGBM mang lại hiệu quả chi phí (Cost-Efficiency) vượt trội so với các cụm máy chủ GPU đắt tiền.
+
+---
+
+## 6. Danh mục Minh chứng (Evidence Files)
+- `evidence/1_Benchmark.py.png`: [Deliverable 1] Ảnh chụp màn hình kết quả chạy script `python3 benchmark.py`.
+- `evidence/benchmark_result.json`: [Deliverable 2] File JSON chứa toàn bộ số liệu đo lường.
+- `evidence/3_Resource.png`: [Deliverable 3] Ảnh chụp màn hình giám sát tài nguyên CPU (`top`), RAM (`free -h`), Network (`ip -s link`).
+- `evidence/4_Billing.png`: [Deliverable 4] Ảnh chụp màn hình GCP Billing Reports thể hiện chi phí dịch vụ Compute Engine và Networking.
+- `terraform-gcp/`: [Deliverable 5] Mã nguồn Terraform hạ tầng GCP đã chạy thành công.
+- `REPORT.md`: [Deliverable 6] Báo cáo nhận xét và đánh giá toàn diện.
+- `benchmark.py`: Mã nguồn script Python benchmark hoàn chỉnh.
